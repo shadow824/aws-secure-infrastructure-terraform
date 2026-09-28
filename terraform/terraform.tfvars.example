@@ -1,0 +1,18 @@
+aws_region               = "us-east-1"
+project_name             = "secure-web-app"
+environment              = "dev"
+availability_zone         = "us-east-1a"
+private_availability_zone_1 = "us-east-1b"
+private_availability_zone_2 = "us-east-1c"
+instance_type            = "t3.micro"
+db_name                  = "appdb"
+db_username              = "admin"
+db_instance_class        = "db.t3.micro"
+db_allocated_storage     = 20
+enable_deletion_protection = false
+
+# Leave null to let Terraform generate a unique bucket name.
+s3_bucket_name = null
+
+# Replace this value locally. Do not commit a real password.
+db_password = "CHANGE_ME_TO_A_STRONG_PASSWORD"
